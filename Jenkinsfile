@@ -11,11 +11,13 @@ pipeline {
             steps {
                 sh 'mvn clean install'
             }
-            stage('deploytomcat') {
+            }
+        stage('deploytomcat') {
             steps {
                echo 'this is the deploy stage'
             }
-  stage('deploytomcat') {
+            }
+        stage('test') {
             steps {
                echo 'this is the test stage'
             }
